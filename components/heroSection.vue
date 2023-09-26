@@ -5,7 +5,7 @@ const {x, y} = useMouse();
 </script>
 
 <template>
-  <div id="blureffect" class=" absolute bg-coral/30 rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none blur-3xl"
+  <div id="blureffect" class=" absolute bg-coral/20 rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none blur-3xl"
        :style="{
     left: `${x}px`,
     top: `${y}px`,
