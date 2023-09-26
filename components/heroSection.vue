@@ -5,7 +5,7 @@ const {x, y} = useMouse();
 </script>
 
 <template>
-  <div id="blureffect" class=" absolute bg-coral/30 rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none blur-3xl"
+  <div id="blureffect" class=" absolute bg-coral/30 rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none blur-3xl overflow-hidden w-screen h-screen"
        :style="{
     left: `${x}px`,
     top: `${y}px`,
@@ -16,7 +16,7 @@ const {x, y} = useMouse();
   </div>
   <div class="flex flex-col justify-center items-center my-20 space-y-5 custom-font">
     <div id="title" class="text-white text-8xl font-extralight">
-      Raph Santana
+      <NameBanner/>
     </div>
     <hr class="w-1/6 border-coral"/>
     <div class="text-coral text-5xl font-thin custom-font">
@@ -34,6 +34,7 @@ const {x, y} = useMouse();
 }
 #blureffect{
   z-index: -1;
+  overflow: hidden;
 }
 
 </style>
