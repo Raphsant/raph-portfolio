@@ -4,7 +4,7 @@
 export default defineNuxtConfig({
     devtools: {enabled: true},
     modules: [
-        '@nuxtjs/tailwindcss', '@nuxtjs/google-fonts','nuxt-icon'
+        '@nuxtjs/tailwindcss', '@nuxtjs/google-fonts','nuxt-icon', '@vueuse/nuxt'
     ],
     //@ts-ignore
     googleFonts: {
