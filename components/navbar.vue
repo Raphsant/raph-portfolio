@@ -5,24 +5,28 @@
 <template>
   <div>
     <div class="text-white text-3xl font-extralight m-2  flex flex-row justify-center items-center">
-      <nav class="flex justify-center items-center space-x-8">
-        <ul class="flex flex-row space-x-8 justify-center items-center w-fit ">
-          <li class="hover:text-coral">Home</li>
-          <li class="hover:text-coral">Projects</li>
-          <li class="hover:text-coral">Blog</li>
-        </ul>
-        <ul class="flex flex-row space-x-4 justify-center items-center w-fit  ">
-          <li class="hover:text-coral">
-            <a href="https://github.com/Raphsant" target="_blank">
-              <Icon name="grommet-icons:github"/>
-            </a>
-
+      <nav class="flex justify-center items-center space-x-8 text-xl">
+        <ul>
+          <li>
+            <NuxtLink to="/"><span id="terminal-span" class=" text-white font-extralight" @click="show = !show"> $ <span
+                class="text-coral font-light">cd Raphsant</span> <Icon class="animate-bounce hover:text-coral"
+                                                                       name="ep:arrow-down-bold"/> </span></NuxtLink>
           </li>
-          <li class="hover:text-coral">
-            <Icon name="grommet-icons:linkedin-option"/>
+          <li>
+            <NuxtLink to="/about"><span id="terminal-span" class=" text-white font-extralight" @click="show = !show"> $ <span
+                class="text-coral font-light">cd Raphsant/Documents/about.txt</span> <Icon
+                class="animate-bounce hover:text-coral"
+                name="ep:arrow-down-bold"/> </span></NuxtLink>
           </li>
-          <li class="hover:text-coral">
-            <Icon name="grommet-icons:mail"/>
+          <li>
+            <NuxtLink to="/projects"><span id="terminal-span" class=" text-white font-extralight" @click="show = !show"> $ <span
+                class="text-coral font-light">cd Raphsant/Documents/repos</span> <Icon
+                class="animate-bounce hover:text-coral" name="ep:arrow-down-bold"/> </span></NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/socials"><span id="terminal-span" class=" text-white font-extralight" @click="show = !show"> $ <span
+                class="text-coral font-light">cd Raphsant/Documents/socials</span> <Icon
+                class="animate-bounce hover:text-coral" name="ep:arrow-down-bold"/> </span></NuxtLink>
           </li>
         </ul>
       </nav>
